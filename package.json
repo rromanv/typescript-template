@@ -1,0 +1,22 @@
+{
+  "name": "typescript-template",
+  "version": "0.0.1",
+  "description": "Basic TypeScript template",
+  "author": {
+    "name": "Rodolfo Roman",
+    "email": "rromanv@gmail.com"
+  },
+  "scripts": {
+    "build": "bob-ts  -i src --paths --no-sourcemap",
+    "dev": "bob-ts-watch --paths --no-sourcemap -i src -c \"node dist/index.mjs\"",
+    "start": "node dist/index.mjs"
+  },
+  "main": "dist/index.mjs",
+  "license": "MIT-0",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "bob-ts": "^4.1.1",
+    "esbuild": "^0.15.5",
+    "typescript": "^4.8.2"
+  }
+}
